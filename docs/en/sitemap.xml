@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ryugibo.github.io/cv/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://ryugibo.github.io/cv/ko/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://ryugibo.github.io/cv/ja/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ryugibo.github.io/cv/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ryugibo.github.io/cv/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://ryugibo.github.io/cv/ko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://ryugibo.github.io/cv/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ryugibo.github.io/cv/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ryugibo.github.io/cv/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://ryugibo.github.io/cv/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://ryugibo.github.io/cv/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ryugibo.github.io/cv/tags/"
+                />
+  </url>
+  
+</urlset>

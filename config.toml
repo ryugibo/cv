@@ -1,0 +1,643 @@
+# Page settings
+
+baseurl = "https://ryugibo.github.io/cv/"
+languageCode = "en-us"
+theme = "hugo-orbit-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+publishDir = "docs"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+DefaultContentLanguage = "en"
+
+[Languages]
+[Languages.en]
+title = "John Doe Resume"
+styles = "styles.css"
+description = "Hugo Responsive Resume/CV Theme for Developers"
+author = "Pavel Kanyshev"
+
+# Sidebar sections
+
+    # Profile section
+    [Languages.en.profile]
+        name = "John Doe"
+        tagline = "Full Stack Developer"
+        avatar = "profile.png"
+
+    # Contact section
+    [Languages.en.contact]
+        enable = true
+
+        [[Languages.en.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: yourname@email.com"
+        title = "john.doe@website.com"
+
+        [[Languages.en.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+1234567890"
+        title = "+1234567890"
+
+        [[Languages.en.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//portfoliosite.com"
+        title = "portfoliosite.com"
+
+        [[Languages.en.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/johndoe"
+        title = "linkedin.com/in/johndoe"
+
+        [[Languages.en.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/username"
+        title = "github.com/username"
+
+        [[Languages.en.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "//twitter.com/username"
+        title = "@twittername"
+
+    # Education section
+    [Languages.en.education]
+        enable = true
+        title = "Education"
+
+        [[Languages.en.education.list]]
+        degree = "MSc in Computer Science"
+        college = "University of London"
+        dates = "2006 - 2010"
+
+        [[Languages.en.education.list]]
+        degree = "BSc in Applied Mathematics"
+        college = "Bristol University"
+        dates = "2007 - 2011"
+
+    # Languages section
+    [Languages.en.language]
+        enable = true
+        title = "Languages"
+
+        [[Languages.en.language.list]]
+        language = "English"
+        level = "Native"
+
+        [[Languages.en.language.list]]
+        language = "French"
+        level = "Professional"
+
+        [[Languages.en.language.list]]
+        language = "Russian"
+        level = "Professional"
+
+    # Interests section
+    [Languages.en.interests]
+        enable = true
+        title = "Interests"
+
+        [[Languages.en.interests.list]]
+        interest = "Climbing"
+
+        [[Languages.en.interests.list]]
+        interest = "Snowboarding"
+
+        [[Languages.en.interests.list]]
+        interest = "Cooking"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [Languages.en.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "**Summarise your career here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
+
+    # Experiences section
+    [Languages.en.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[Languages.en.jobs.list]]
+        position = "Lead Developer"
+        dates = "2015 - Present"
+        company = "Startup Hubs, San Francisco"
+        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.\n\n Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+
+        [[Languages.en.jobs.list]]
+        position = "Senior Software Engineer"
+        dates = "2014 - 2015"
+        company = "Google, London"
+        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+
+        [[Languages.en.jobs.list]]
+        position = "UI Developer"
+        dates = "2012 - 2014"
+        company = "Amazon, London"
+        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+
+    # Projects section
+    [Languages.en.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
+
+        [[Languages.en.projects.list]]
+        title = "Hugrid"
+        url = "https://github.com/aerohub/hugrid"
+        tagline = "Grid theme for Hugo. It's a kind of boilerplate to perform anyone or anything quickly. Portfolio, collection, bookmarks, contacts and so on"
+
+        [[Languages.en.projects.list]]
+        title = "Simple FAQ Theme for Hugo"
+        url = "https://github.com/aerohub/hugo-faq-theme"
+        tagline = "Simple FAQ Theme for Hugo. You may use this theme for building very simple FAQs or note lists."
+
+        [[Languages.en.projects.list]]
+        title = "Hugo Identity"
+        url = "https://github.com/aerohub/hugo-identity-theme"
+        tagline = "Little profile/card-style template for Hugo."
+
+        [[Languages.en.projects.list]]
+        title = "Orbit"
+        url = "https://github.com/aerohub/hugo-orbit-theme"
+        tagline = "Hugo Resume/CV Theme for Developers."
+
+        [[Languages.en.projects.list]]
+        title = "Me"
+        url = "https://github.com/aerohub/hugo-me-theme"
+        tagline = "A simple responsive Hugo theme for personal site."
+
+    # Skills section
+    [Languages.en.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[Languages.en.skills.list]]
+        skill = "Python & Django"
+        level = "98%"
+                
+        [[Languages.en.skills.list]]
+        skill = "Javascript & jQuery"
+        level = "98%"
+
+        [[Languages.en.skills.list]]
+        skill = "Angular"
+        level = "95%"
+
+        [[Languages.en.skills.list]]
+        skill = "HTML5 & CSS"
+        level = "95%"
+
+        [[Languages.en.skills.list]]
+        skill = "Ruby on Rails"
+        level = "75%"
+
+        [[Languages.en.skills.list]]
+        skill = "Sketch & Photoshop"
+        level = "60%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [Languages.en.footer]
+        copyright = ""
+
+[Languages.ko]
+title = "John Doe Resume"
+styles = "styles-4.css"
+description = "Hugo Responsive Resume/CV Theme for Developers"
+author = "Pavel Kanyshev"
+
+# Sidebar sections
+
+    # Profile section
+    [Languages.ko.profile]
+        name = "John Doe"
+        tagline = "Full Stack Developer"
+        avatar = "profile.png"
+
+    # Contact section
+    [Languages.ko.contact]
+        enable = true
+
+        [[Languages.ko.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: yourname@email.com"
+        title = "john.doe@website.com"
+
+        [[Languages.ko.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+1234567890"
+        title = "+1234567890"
+
+        [[Languages.ko.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//portfoliosite.com"
+        title = "portfoliosite.com"
+
+        [[Languages.ko.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/johndoe"
+        title = "linkedin.com/in/johndoe"
+
+        [[Languages.ko.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/username"
+        title = "github.com/username"
+
+        [[Languages.ko.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "//twitter.com/username"
+        title = "@twittername"
+
+    # Education section
+    [Languages.ko.education]
+        enable = true
+        title = "Education"
+
+        [[Languages.ko.education.list]]
+        degree = "MSc in Computer Science"
+        college = "University of London"
+        dates = "2006 - 2010"
+
+        [[Languages.ko.education.list]]
+        degree = "BSc in Applied Mathematics"
+        college = "Bristol University"
+        dates = "2007 - 2011"
+
+    # Languages section
+    [Languages.ko.language]
+        enable = true
+        title = "Languages"
+
+        [[Languages.ko.language.list]]
+        language = "English"
+        level = "Native"
+
+        [[Languages.ko.language.list]]
+        language = "French"
+        level = "Professional"
+
+        [[Languages.ko.language.list]]
+        language = "Russian"
+        level = "Professional"
+
+    # Interests section
+    [Languages.ko.interests]
+        enable = true
+        title = "Interests"
+
+        [[Languages.ko.interests.list]]
+        interest = "Climbing"
+
+        [[Languages.ko.interests.list]]
+        interest = "Snowboarding"
+
+        [[Languages.ko.interests.list]]
+        interest = "Cooking"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [Languages.ko.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "**Summarise your career here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
+
+    # Experiences section
+    [Languages.ko.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[Languages.ko.jobs.list]]
+        position = "Lead Developer"
+        dates = "2015 - Present"
+        company = "Startup Hubs, San Francisco"
+        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.\n\n Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+
+        [[Languages.ko.jobs.list]]
+        position = "Senior Software Engineer"
+        dates = "2014 - 2015"
+        company = "Google, London"
+        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+
+        [[Languages.ko.jobs.list]]
+        position = "UI Developer"
+        dates = "2012 - 2014"
+        company = "Amazon, London"
+        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+
+    # Projects section
+    [Languages.ko.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
+
+        [[Languages.ko.projects.list]]
+        title = "Hugrid"
+        url = "https://github.com/aerohub/hugrid"
+        tagline = "Grid theme for Hugo. It's a kind of boilerplate to perform anyone or anything quickly. Portfolio, collection, bookmarks, contacts and so on"
+
+        [[Languages.ko.projects.list]]
+        title = "Simple FAQ Theme for Hugo"
+        url = "https://github.com/aerohub/hugo-faq-theme"
+        tagline = "Simple FAQ Theme for Hugo. You may use this theme for building very simple FAQs or note lists."
+
+        [[Languages.ko.projects.list]]
+        title = "Hugo Identity"
+        url = "https://github.com/aerohub/hugo-identity-theme"
+        tagline = "Little profile/card-style template for Hugo."
+
+        [[Languages.ko.projects.list]]
+        title = "Orbit"
+        url = "https://github.com/aerohub/hugo-orbit-theme"
+        tagline = "Hugo Resume/CV Theme for Developers."
+
+        [[Languages.ko.projects.list]]
+        title = "Me"
+        url = "https://github.com/aerohub/hugo-me-theme"
+        tagline = "A simple responsive Hugo theme for personal site."
+
+    # Skills section
+    [Languages.ko.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[Languages.ko.skills.list]]
+        skill = "Python & Django"
+        level = "98%"
+                
+        [[Languages.ko.skills.list]]
+        skill = "Javascript & jQuery"
+        level = "98%"
+
+        [[Languages.ko.skills.list]]
+        skill = "Angular"
+        level = "95%"
+
+        [[Languages.ko.skills.list]]
+        skill = "HTML5 & CSS"
+        level = "95%"
+
+        [[Languages.ko.skills.list]]
+        skill = "Ruby on Rails"
+        level = "75%"
+
+        [[Languages.ko.skills.list]]
+        skill = "Sketch & Photoshop"
+        level = "60%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [Languages.ko.footer]
+        copyright = ""
+
+[Languages.ja]
+title = "John Doe Resume"
+styles = "styles-6.css"
+description = "Hugo Responsive Resume/CV Theme for Developers"
+author = "Pavel Kanyshev"
+
+# Sidebar sections
+
+    # Profile section
+    [Languages.ja.profile]
+        name = "John Doe"
+        tagline = "Full Stack Developer"
+        avatar = "profile.png"
+
+    # Contact section
+    [Languages.ja.contact]
+        enable = true
+
+        [[Languages.ja.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: yourname@email.com"
+        title = "john.doe@website.com"
+
+        [[Languages.ja.contact.list]]
+        class = "phone"
+        icon = "fa-phone"
+        url = "tel:+1234567890"
+        title = "+1234567890"
+
+        [[Languages.ja.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//portfoliosite.com"
+        title = "portfoliosite.com"
+
+        [[Languages.ja.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/johndoe"
+        title = "linkedin.com/in/johndoe"
+
+        [[Languages.ja.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/username"
+        title = "github.com/username"
+
+        [[Languages.ja.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "//twitter.com/username"
+        title = "@twittername"
+
+    # Education section
+    [Languages.ja.education]
+        enable = true
+        title = "Education"
+
+        [[Languages.ja.education.list]]
+        degree = "MSc in Computer Science"
+        college = "University of London"
+        dates = "2006 - 2010"
+
+        [[Languages.ja.education.list]]
+        degree = "BSc in Applied Mathematics"
+        college = "Bristol University"
+        dates = "2007 - 2011"
+
+    # Languages section
+    [Languages.ja.language]
+        enable = true
+        title = "Languages"
+
+        [[Languages.ja.language.list]]
+        language = "English"
+        level = "Native"
+
+        [[Languages.ja.language.list]]
+        language = "French"
+        level = "Professional"
+
+        [[Languages.ja.language.list]]
+        language = "Russian"
+        level = "Professional"
+
+    # Interests section
+    [Languages.ja.interests]
+        enable = true
+        title = "Interests"
+
+        [[Languages.ja.interests.list]]
+        interest = "Climbing"
+
+        [[Languages.ja.interests.list]]
+        interest = "Snowboarding"
+
+        [[Languages.ja.interests.list]]
+        interest = "Cooking"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [Languages.ja.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "**Summarise your career here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
+
+    # Experiences section
+    [Languages.ja.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[Languages.ja.jobs.list]]
+        position = "Lead Developer"
+        dates = "2015 - Present"
+        company = "Startup Hubs, San Francisco"
+        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.\n\n Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+
+        [[Languages.ja.jobs.list]]
+        position = "Senior Software Engineer"
+        dates = "2014 - 2015"
+        company = "Google, London"
+        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+
+        [[Languages.ja.jobs.list]]
+        position = "UI Developer"
+        dates = "2012 - 2014"
+        company = "Amazon, London"
+        details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+
+    # Projects section
+    [Languages.ja.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
+
+        [[Languages.ja.projects.list]]
+        title = "Hugrid"
+        url = "https://github.com/aerohub/hugrid"
+        tagline = "Grid theme for Hugo. It's a kind of boilerplate to perform anyone or anything quickly. Portfolio, collection, bookmarks, contacts and so on"
+
+        [[Languages.ja.projects.list]]
+        title = "Simple FAQ Theme for Hugo"
+        url = "https://github.com/aerohub/hugo-faq-theme"
+        tagline = "Simple FAQ Theme for Hugo. You may use this theme for building very simple FAQs or note lists."
+
+        [[Languages.ja.projects.list]]
+        title = "Hugo Identity"
+        url = "https://github.com/aerohub/hugo-identity-theme"
+        tagline = "Little profile/card-style template for Hugo."
+
+        [[Languages.ja.projects.list]]
+        title = "Orbit"
+        url = "https://github.com/aerohub/hugo-orbit-theme"
+        tagline = "Hugo Resume/CV Theme for Developers."
+
+        [[Languages.ja.projects.list]]
+        title = "Me"
+        url = "https://github.com/aerohub/hugo-me-theme"
+        tagline = "A simple responsive Hugo theme for personal site."
+
+    # Skills section
+    [Languages.ja.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[Languages.ja.skills.list]]
+        skill = "Python & Django"
+        level = "98%"
+                
+        [[Languages.ja.skills.list]]
+        skill = "Javascript & jQuery"
+        level = "98%"
+
+        [[Languages.ja.skills.list]]
+        skill = "Angular"
+        level = "95%"
+
+        [[Languages.ja.skills.list]]
+        skill = "HTML5 & CSS"
+        level = "95%"
+
+        [[Languages.ja.skills.list]]
+        skill = "Ruby on Rails"
+        level = "75%"
+
+        [[Languages.ja.skills.list]]
+        skill = "Sketch & Photoshop"
+        level = "60%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [Languages.ja.footer]
+        copyright = ""
